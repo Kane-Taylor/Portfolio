@@ -1,0 +1,61 @@
+<html>
+<head><Title>My Calculator</title>
+<style type = "text/css">
+body {font-size: large}
+.box {text-align:center; width:80; background: #EEFFFF; border: solid;
+    border-color: navy; padding: 1em; border-width: 1px;
+    font-family:"Courier New"; font-size:80%}
+.indent { margin-left:1em }
+.numStyle {
+     background-color: aqua;
+     color: black;
+ }
+.opStyle {
+    background-color: moccasin;
+    color: blue;
+}
+.clrStyle {
+    background-color: coral;
+    color: white;
+}
+button { width:2.2em; font-weight:bold }
+</style>
+<script src="Calculator.js" type="text/javascript"></script>
+</head>
+<body>
+<p id="R" class="box">0</p>
+<table>
+<tr>
+<td><button class="numStyle" onclick="numFunction('1')">1</button></td>
+<td><button class="numStyle" onclick="numFunction('2')">2</button></td>
+<td><button class="numStyle" onclick="numFunction('3')">3</button></td>
+</tr>
+<tr>
+<td><button class="numStyle" onclick="numFunction('4')">4</button></td>
+<td><button class="numStyle" onclick="numFunction('5')">5</button></td>
+<td><button class="numStyle" onclick="numFunction('6')">6</button></td>
+</tr>
+<tr>
+<td><button class="numStyle" onclick="numFunction('7')">7</button></td>
+<td><button class="numStyle" onclick="numFunction('8')">8</button></td>
+<td><button class="numStyle" onclick="numFunction('9')">9</button></td>
+</tr>
+<tr>
+<td><button class="numStyle" onclick="dotFunction()">.</button></td>
+<td><button class="numStyle" onclick="numFunction('0')">0</button></td>
+<td><button class="clrStyle" onclick="clrFunction()">C</button></td>
+</tr>
+<tr>
+<td><button class="opStyle" onclick="opFunction('+')">+</button></td>
+<td><button class="opStyle" onclick="opFunction('-')">-</button></td>
+<td><button class="opStyle" onclick="opFunction('*')">*</button></td>
+</tr>
+</table>
+<table class="indent">
+<tr>
+<td><button class="opStyle" onclick="opFunction('/')">/</button></td>
+<td><button class="opStyle" onclick="eqFunction()">=</button></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Count</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CE212.css">
+</head>
+<body>
+<header>
+    <h2>Word Count</h2>
+</header>
+<section>
+    <nav>
+        <p> </p>
+        <p>Filename: <input id = "url" name="url" size=15 type="Text" value=""/></p>
+        <a href="javascript:openFile(document.getElementById('url').value)"> Open document</a>
+        <p> </p>
+        <a href="javascript:parseText()">Count words in  text</a>
+        <p> </p>
+        <select id="choice">
+            <option value="A">non-white-space</option>
+            <option value="B">alphabetic</option>
+        </select>
+        <p> </p>
+    </nav>
+    <article>
+        <h1 id="tab">Word Count Table</h1>
+        <p id="showTable"></p>
+        <pre id="count"> &nbsp; </pre><br/>
+    </article>
+</section>
+<footer>
+    <p>Kane Taylor</p>
+</footer>
+</body>
+<script src="WordCount.js" type="text/javascript"></script>
+</html>
+
