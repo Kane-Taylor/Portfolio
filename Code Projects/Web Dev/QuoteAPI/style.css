@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    background-color: whitesmoke;
+
+            
+
+
+}
+
+.quote_box{
+    background-color: lightblue;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,,0,0,0,15);
+
+}
+
+.quote_box h2{
+    font-size: 32px;
+    margin-bottom:40px;
+    position:relative;
+
+}
+
+.quote_box  h2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    border-radius:3px;
+    background: rgb(23,125,230);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote_box blockquote{
+    font-size:26px;
+    min-height:120px;
+
+}
+
+.quote_box blockquote::before, .quote-box blockquote::after{
+    content:'"';
+}
+.quote_box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote_box span::before{
+    content: '';
+    width:20px;
+    height:2px;
+    background: rgb(23,125,330);
+    position: absolute;
+    top: 50%;
+    left: -40px;
+}
+
+.quote_box div{
+    width:100%;
+    margin-top: 50px;
+    display:flex;
+    justify-content:center;
+}
+
+.quote_box button{
+    background: rgb(25,125,230);
+    color: black;
+    font:30px;
+    border-radius: 25px;
+    border: 1px solid rgb(25,125,230);
+    width: 150px;
+    height: 50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 5px;
+    cursor: pointer;
+
+}

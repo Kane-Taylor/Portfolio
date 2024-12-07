@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: rgba(48, 64, 64, 1.0);
+    background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    font-family: Arial, cursive;
+    min-height: 100vh;
+}
+
+.app {
+    width: 600px;
+    margin: auto;
+    padding-top: 75px;
+    color: orangered;
+}
+
+.inputHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: orangered;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
+}
+
+.todoInput input {
+    width: 250px;
+    font-family: inherit;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.todoInput button {
+    color: floralwhite;
+    background-color: black;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .todoList i {
+        color: red;
+        cursor: pointer;
+    }
+
+
+    .todoList button {
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: inherit;
+        border: none;
+    }
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.inputController {
+    display: flex;
+    gap: 10px;
+}
+
+    .inputController textArea {
+        width: 100%;
+        outline: none;
+        border: none;
+        resize: none;
+        line-height: 1.4;
+        color: orangered;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-family: inherit;
+        transition: all 0.30s ease-in-out;
+    }
+
+textArea:focus {
+    box-shadow: 0 0 3px white;
+}
+
+.editController {
+    display: flex;
+    gap: 3px;
+}
+
+.updateController {
+    display: none;
+}
+
+@media(max-width: 780px) {
+    .app {
+        width: 100%;
+        text-align: center;
+    }
+
+    .inputHeader {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .todoInput {
+        display: flex;
+    }
+
+        .todoInput input {
+            width: 400px;
+        }
+}
